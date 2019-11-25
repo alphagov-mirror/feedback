@@ -45,31 +45,13 @@ survey. However, it does not collect the answers. More documentation about that 
 
 - [support-api](https://github.com/alphagov/support-api) - provides an API for storing and fetching anonymous feedback about pages on GOV.UK. Data comes in from the [feedback app][feedback] on the public-facing frontend and is read by [the support app][support] on the admin-facing backend.
 - [support](https://github.com/alphagov/support) - receives feedback from the `feedback` app and creates Zendesk tickets from it.
-- [static](https://github.com/alphagov/static) - renders contact forms that will collect information that will be sent to the `feedback` app. 
-
-### Running the application
-
-To start the app using `bowler`:
-
-    bowl feedback
-
-To start the app directly:
-
-    ./startup.sh
-    
-This will start the app on port `3028`.     
+- [static](https://github.com/alphagov/static) - renders contact forms that will collect information that will be sent to the `feedback` app.  
 
 ### Running the test suite
 
 To run unit tests, execute the following:
 
     bundle exec rake
-
-#### Manual testing with a mock signon strategy
-
-Launch using `bowl` from the `development` directory:
-
-    development> bowl feedback
 
 #### Manual testing with real authorisation
 
